@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Leaflet maps -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script defer src="js/snakeanim.js"></script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script
+      defer
+      type="text/javascript"
+      src="js/data.js"
+      crossorigin=""
+    ></script>
+    <script
+      defer
+      type="text/javascript"
+      src="js/main.js?version=8"
+      crossorigin=""
+    ></script>
+  </head>
+  <body>
+    <main>
+      <div class="box_floating">
+        <h1>Check to animate a journey:</h1>
+        <p>
+          Note: Some highlighted places are not included in any animated trip
+          since they were short trips.
+        </p>
+        <ul>
+          <label class="container" for="checkbox_kgz" tabindex="0">
+            Kyrgyzstan
+            <!-- TODO: <img src="img/flags/kyrgyzstan.webp" alt="Kyrgyzstan" /> -->
+            <input
+              type="checkbox"
+              name="kgz"
+              id="checkbox_kgz"
+              onchange="drawPolyline(this)"
+            />
+
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="container" for="checkbox_thai" tabindex="0"
+            >Thailand
+            <!-- TODO: <img src="img/flags/thailand.webp" alt="Thailand" /> -->
+            <input
+              type="checkbox"
+              name="thai"
+              id="checkbox_thai"
+              onchange="drawPolyline(this)"
+            />
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="container" for="checkbox_venice" tabindex="0">
+            Venice
+            <!-- TODO: <img src="img/flags/venice.webp" alt="Venice" /> -->
+            <input
+              type="checkbox"
+              name="venice"
+              id="checkbox_venice"
+              onchange="drawPolyline(this)"
+            />
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="container" for="checkbox_erasmus" tabindex="0">
+            Erasmus
+            <!-- TODO: <img src="img/flags/erasmus.webp" alt="Erasmus" /> -->
+            <input
+              type="checkbox"
+              name="erasmus"
+              id="checkbox_erasmus"
+              onchange="drawPolyline(this)"
+            />
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="container" for="checkbox_mallorca" tabindex="0">
+            Mallorca
+            <!-- TODO: <img src="img/flags/mallorca.webp" alt="Mallorca" /> -->
+            <input
+              type="checkbox"
+              name="mallorca"
+              id="checkbox_mallorca"
+              onchange="drawPolyline(this)"
+            />
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="container" for="checkbox_uk" tabindex="0">
+            United Kingdom
+            <!-- TODO: <img src="img/flags/mallorca.webp" alt="UK" /> -->
+            <input
+              type="checkbox"
+              name="uk"
+              id="checkbox_uk"
+              onchange="drawPolyline(this)"
+            />
+            <span class="checkmark"></span>
+          </label>
+        </ul>
+      </div>
+      <div id="map"></div>
+    </main>
+    <footer>
+      <div>
+        <p>
+          You can :
+          <a target="_blank" href="https://alesklasek.com/"
+            >checkout the author 👀</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
