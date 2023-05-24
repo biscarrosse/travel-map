@@ -64,6 +64,13 @@ a:visited {
   }
 }
 
+.leaflet-popup-content {
+  margin: 0.2rem;
+}
+.leaflet-popup-content-wrapper {
+  padding-right: 1rem;
+}
+
 /* custom checkbox: */
 /* The container */
 .container {

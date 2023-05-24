@@ -216,4 +216,19 @@ const PLACES = {
     name: "Free states of post-russia",
     coordinates: [55.77, 37.62],
   },
+  kurdistan: {
+    code: "",
+    name: "Kurdistan",
+    coordinates: [38.21, 40.97],
+  },
+  artsakh: {
+    code: "",
+    name: "Republic of Artsakh",
+    coordinates: [40.03, 46.62],
+  },
+  kralovec: {
+    code: "",
+    name: "Królewiec",
+    coordinates: [54.71, 21.18],
+  },
 };

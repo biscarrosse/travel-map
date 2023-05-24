@@ -191,3 +191,18 @@ const popup_4 = L.popup(PLACES.northernAsia.coordinates, {
   // TODO: render flag
   autoClose: false,
 }).addTo(map);
+const popup_5 = L.popup(PLACES.kurdistan.coordinates, {
+  content: `<b>${PLACES.kurdistan.name}</b>`,
+  // TODO: render flag
+  autoClose: false,
+}).addTo(map);
+const popup_6 = L.popup(PLACES.artsakh.coordinates, {
+  content: `<b>${PLACES.artsakh.name}</b>`,
+  // TODO: render flag
+  autoClose: false,
+}).addTo(map);
+const popup_7 = L.popup(PLACES.kralovec.coordinates, {
+  content: `<b>${PLACES.kralovec.name}</b>`,
+  // TODO: render flag
+  autoClose: false,
+}).addTo(map);
