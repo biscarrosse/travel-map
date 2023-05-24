@@ -1,4 +1,4 @@
-const init_coordinates = [49.2, 16.56];
+const init_coordinates = [49.19670569759333, 16.604925309898263]; // Brn
 const init_zoom = 5;
 
 // initiate map:
