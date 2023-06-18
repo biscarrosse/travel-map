@@ -213,7 +213,7 @@ const PLACES = {
   },
   northernAsia: {
     code: "",
-    name: "Free states of post-russia",
+    name: "Cancer of the world, murderers, thieves, war criminals",
     coordinates: [55.77, 37.62],
   },
   kurdistan: {
